@@ -1,0 +1,18 @@
+Création des volumes
+
+Créez un volume vol1
+
+docker volume create vol1
+
+Listez les volumes
+
+docker volume ls 
+
+Montez le vol1 dans un conteneur ubuntu
+
+
+Créez un fichier dans un conteneur ubuntu
+Quittez le conteneur avec exit
+Créez une image à partir du conteneurs
+Lancez un conteneur à partir de la nouvelle image.
+Que remarquez-vous ?

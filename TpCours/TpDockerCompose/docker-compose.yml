@@ -1,0 +1,31 @@
+services:
+  web1:
+    image:  nginx
+    volumes:
+      - "./web1:/usr/share/nginx/html"
+    networks:
+      - net1
+    
+  web2:
+    image:  nginx
+    volumes:
+      - "./web2:/usr/share/nginx/html"
+    networks:
+      - net2
+  haproxy: 
+    image: haproxy 
+    ports:
+      - "8080:80"
+    volumes:
+      - "./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro"
+    depends_on:
+      - web1
+      - web2
+    networks:
+      - net1
+      - net2
+
+networks: 
+  net1:
+  net2:
+      

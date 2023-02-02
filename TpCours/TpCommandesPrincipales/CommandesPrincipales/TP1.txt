@@ -1,0 +1,6 @@
+Installation
+Mettez à jour la distribution --> wsl --update ensuite apt update && upgrade 
+Suivez la procédure d' installation de Docker --> Voir la doc officiel de docker 
+Installez Docker CE  --> Voir la doc officiel de docker 
+Démarrez le démon Docker  --> sudo service docker start
+Affichez la version de Docker --> docker --v 

@@ -1,0 +1,17 @@
+La commande logs
+
+Exécutez un conteneur en arrière-plan
+
+docker run -d image 
+
+Récupérez l’id du conteneur et consultez les logs
+
+docker ps && docker logs conteneur[id / name]
+
+Consultez les logs en ajoutant l’option - f
+
+docker logs conteneur[id / name] -f 
+
+Consultez les logs en ajoutant l’option - f et l’option -- tail 10
+
+docker logs conteneur[id / name] -f --tail 10

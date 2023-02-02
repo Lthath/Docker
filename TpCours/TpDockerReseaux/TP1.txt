@@ -1,0 +1,11 @@
+Tests avec haproxy
+
+Nous allons créer une application avec 3 conteneurs dans un réseau privé :
+
+docker create network web 
+
+web1 : un serveur nginx non mappé qui doit afficher Server ONE 
+web2 : un serveur nginx non mappé qui doit afficher Server TWO
+myhaproxy : un serveur haproxy mappé, qui recevra en FrontEnd les requêtes
+HTTP des clients sur le port 80 du Docker Host et qui redirigera en BackEnd
+vers les 2 serveurs web1 et web2

@@ -1,0 +1,15 @@
+Dockerfile
+Créez un fichier Dockerfile dans un nouveau répertoire
+Remplissez le Dockerfile pour qu’il utilise rockylinux:9.0 comme image de base, qu’il y ait une mise à jour et que wget soit installé
+Construisez la nouvelle image
+Listez les images
+Modifiez le Dock er file pour ajouter l’ installation d’un nouveau paquet , zip
+Construisez la nouvelle image
+Observez l’utilisation du cache
+Visualisez l’historique de la construction des images
+Modifiez le fichier Dockerfile pour que les deux installations soient faites avec la même commande
+FROM rockylinux:9.0
+
+RUN yum update -y && yum install -y wget zip
+
+Que remarquez-vous lors de la construction ?

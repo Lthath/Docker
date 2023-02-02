@@ -1,0 +1,16 @@
+Accéder au terminal d'un conteneur
+
+docker attach name du conteneur / conteneur[id]
+
+Créez un conteneur à l’aide de l’image ubuntu et connectez-vous au terminal
+
+docker run -it ubuntu 
+
+Créez un fichier dans le conteneur puis sortez du conteneur
+
+touch test.txt
+
+Relancez la commande run écrite au premier point de cette diapo
+
+docker run -it ubuntu
+Que s’es t-il passé ?

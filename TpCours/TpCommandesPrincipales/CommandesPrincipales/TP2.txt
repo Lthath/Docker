@@ -1,0 +1,11 @@
+Utilisation de Docker Hub
+
+Téléchargez la dernière image ubuntu à partir du Hub
+
+docker search ubuntu 
+docker pull ubuntu ( Par défaut le tags est en "latest")
+docker pull ubuntu:latest
+
+Listez les images présentes localement
+
+docker images 

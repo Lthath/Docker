@@ -1,0 +1,12 @@
+Lancement de l'agent
+
+Expliquez la commande
+Listez les conteneurs , que constatez-vous ?
+On ajoute l’agent portainer qui permet entre autre de lister le contenu de
+volumes docker :
+
+docker run -d -p 9001:9001 --name portainer_agent --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/docker/volumes:/var/lib/docker/volumes portainer/agent:latest
+
+
+curl -X GET localhost:5000/v2/_catalog
+docker tag alpinegit <SERVER NAME REGISTRY>:<PORT SERVER REGISTRY>/<CONTAINER NAME>

@@ -1,0 +1,15 @@
+La commande inspect
+
+Testez la commande inspect , lisez attentivement les différentes informations que vous obtenez
+
+docker inspect conteneur[id / name]
+
+Testez l’option --format pour sélectionner uniquement l’adresse IP du conteneur
+
+docker inspect --format '{{.NetworkSettings.IPAddress}}' "id"
+
+Utilisez l’option --format pour sélectionner toutes les informations relatives au réseau du conteneur
+
+docker inspect --format '{{json .NetworkSettings}}' 630e0feeb015|jq
+
+( si jq = command not found, télécharger le paquer via apt )

@@ -1,0 +1,10 @@
+Lancez un conteneur basé sur l'image ubuntu avec la commande bash qui
+tourne à l'intérieur
+
+docker run -d -it ubuntu bash
+
+Attachez-vous à ce conteneur
+
+docker attach conteneur[id] / name du conteneur 
+
+Appuyez sur CTRL + P + Q : que se passe-t-il ?

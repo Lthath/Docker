@@ -1,0 +1,15 @@
+Modifications dans un conteneur
+
+Exécutez un conteneur à partir de l’image rockylinux:9.0 et installez wget à l’intérieur
+
+Dans un Dockerfile : 
+
+FROM rockylinux:9.0
+
+RUN yum update -y && yum install -y wget
+
+A l'extérieur build 
+
+docker build -t hakim/Test:1.0 .
+
+Comparez le conteneur modifié et l’image de base

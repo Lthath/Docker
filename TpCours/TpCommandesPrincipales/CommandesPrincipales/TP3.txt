@@ -1,0 +1,19 @@
+Exécuter un conteneur
+
+Exécutez un conteneur à partir de l'image ubuntu
+
+docker run -it ubuntu
+
+Exécutez la commande ps -ef
+
+	. à l'intérieur du conteneur --> ps -ef 
+	. depuis l'extérieur Ctrl + P + Q pour quitter ensuite faire un docker exec ubuntu[id] / Name ps -ef 
+
+Listez les conteneurs en exécution
+
+docker ps 
+
+Listez tous les conteneurs
+
+docker ps -a 
+

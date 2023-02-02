@@ -1,0 +1,20 @@
+Exécution en mode détaché
+
+Lancer un conteneur basé sur l’image rockylinux:9.0 en exécutant la
+commande ping 127.0.0.1 -c 60 en mode détaché
+
+docker run -d rockylinux:9.0 ping 127.0.0.1 -c 60 
+
+Listez les conteneurs
+
+docker ps ( on le voit toujours )
+Verif log pour voir les pings se dérouler 
+Bonus --> docker logs name du conteneur / 
+
+Attendez quelques secondes et listez à nouveau les conteneurs
+
+docker ps 
+
+Que s’es t-il passé ?
+
+le conteneur s'est arrêté après 20 ping 

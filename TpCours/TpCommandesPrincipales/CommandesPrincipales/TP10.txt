@@ -1,0 +1,13 @@
+Supprimer un conteneur
+
+Listez les conteneurs arrêtés à l’aide de l’option -- filter
+
+docker ps -f=status=exited
+
+Supprimez un conteneur arrêté
+
+docker rm conteneur[id / name]
+
+Supprimez tous les conteneurs arrêtés
+
+docker rm $(docker ps -qa)

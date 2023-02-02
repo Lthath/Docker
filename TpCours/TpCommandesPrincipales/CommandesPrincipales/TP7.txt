@@ -1,0 +1,27 @@
+La commande exec
+
+Exécutez un conteneur en arrière plan en lançant bash
+
+docker exec -d -it conteneur[id / name] bash 
+
+Listez les conteneurs
+
+docker ps
+Attachez-vous puis détachez-vous du conteneur
+
+docker attach conteneur[id / name]
+Ctrl + P + Q
+Exécutez à nouveau bash à l’intérieur du même conteneur
+
+docker exec -it conteneur[id / name] bash 
+
+Listez les processus à l’intérieur du conteneur.
+
+ps -ef
+Que constatez-vous ?
+
+
+Observez les PPID : que constatez-vous ?
+
+On voit un ppid 1 
+

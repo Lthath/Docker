@@ -1,0 +1,17 @@
+Création d’une nouvelle image
+
+Créez une nouvelle image à partir du conteneur modifié
+
+FROM rockylinux:9.0
+
+RUN yum update -y && yum install -y wget
+RUN yum install -y zip
+
+Créez un conteneur à partir de la nouvelle image
+
+docker build -t hakim/test:1.0 .
+
+Vérifiez que vous avez bien le logiciel wget installé
+
+docker history hakim/test:1.0
+Of course yeahhhhhhhhhh
